@@ -36,9 +36,10 @@ aside
 	float: left;
 	background: white;
 }
-aside nav li
+aside nav p
 {
-	padding: 20px;
+	margin: 5px 0px 5px 15px;
+	padding: 5px 0px 30px 15px;
 	font-size: 1.2em;
 }
 footer
