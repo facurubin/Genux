@@ -14,30 +14,16 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+ 	
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
   margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
 .icono-mail:before { content: '\e805'; } /* '' */
@@ -88,9 +74,11 @@ section
 }
 aside
 {
-	height: 800px;
+	text-align: center;
+	padding: 5px;
+	height: 700px;
 	margin: 0 0px 0 0;
-	width: 20%;
+	width: 18%;
 	float: left;
 	background: white;
 }
@@ -123,9 +111,8 @@ footer a, footer p
 }
 #logo
 {
-	width: 120px;
-	height: 110px;
-	margin: -135px 35px 0px 0px;
+
+	margin: -145px 32px 0px 0px;
 	float: right;
 	font-size: 6.5em;
 }
