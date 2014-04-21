@@ -1,10 +1,9 @@
 <?php 
 	include 'header.php';
-	echo '<article id="contenido">
-				<h2 class="titulo">Quines Somos</h2>
-				<p>
-					Somos una empresa con mas de 3 años de trayectoria en la ciudad de Corrientes Capital. En la cual brindamos el mas amplio cantidad de insumos que usted necesite.
-				</p>
+?>
+<article id="contenido">
+	<h2 class="titulo">Quines Somos</h2>
+		<p>Somos una empresa con mas de 3 años de trayectoria en la ciudad de Corrientes Capital. En la cual brindamos el mas amplio cantidad de insumos que usted necesite.</p>
 				<p>
 					Somos proveedores de diversas marcas que garantizan la calidad de nuestros productos.
 				</p>
@@ -18,5 +17,6 @@
 					Tu consulta no molesta..
 				</p>
 				</article>';
+<?php 
 	include 'footer.php';
  ?>
