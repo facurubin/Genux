@@ -95,7 +95,7 @@ footer
 	background: white;
 	width: 100%;
 	float: left;
-	margin-bottom: 0px;
+	margin: 0px;
 }
 footer a, footer p
 {
@@ -112,7 +112,6 @@ footer a, footer p
 }
 #logo
 {
-
 	margin: -145px 32px 0px 0px;
 	float: right;
 	font-size: 6.5em;
@@ -126,17 +125,42 @@ footer a, footer p
 .barra
 {
 	display: inline-block;
-	padding: 0;
 	width: 100%;
 	padding:0 5px 5px 5px;
 	background: grey;
 }
 .barra a
 {
+	text-align: center;
 	color: white;
 }
 footer .barra a:hover
 {
 	color: black;
 	background: white;
+}
+#staff
+{
+	text-align: center;
+	width: 100%;
+	background: white;
+	display: inline-block;
+}
+.staff
+{
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+	background: grey;
+}
+.staff .persona img
+{
+	width: 150px;
+}
+.staff .nombre
+{
+	color:white;
+	text-align: center;
 }
