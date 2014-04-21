@@ -99,6 +99,7 @@ footer
 }
 footer a, footer p
 {
+	color: black;
 	margin: 5px 0 0px 0;
 	padding:0 90px 5px 45px;
 	display: inline-block;
@@ -115,4 +116,27 @@ footer a, footer p
 	margin: -145px 32px 0px 0px;
 	float: right;
 	font-size: 6.5em;
+}
+.titulo
+{
+	color: white;
+	padding: 10px;
+	background: grey;
+}
+.barra
+{
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+	padding:0 5px 5px 5px;
+	background: grey;
+}
+.barra a
+{
+	color: white;
+}
+footer .barra a:hover
+{
+	color: black;
+	background: white;
 }
