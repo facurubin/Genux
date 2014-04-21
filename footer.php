@@ -23,7 +23,6 @@
 	  		<a href="" class="icono-facebook"> Facebook</a>
 	  		<a href="" class="icono-twitter"> Twitter</a>
 	  		<a href="" class="icono-gmail"> Mail</a>
-	  		</p>
 	  	</footer>
 	</body>
 </html>';
