@@ -177,6 +177,11 @@ footer .barra a:hover
 	background: grey;
 	width: 150px;
 }
+#construccion
+{
+	width: 700px;
+}
+
 @media (max-width: 600px) {
 	aside
 	{
