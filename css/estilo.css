@@ -177,7 +177,15 @@ footer .barra a:hover
 	background: grey;
 	width: 150px;
 }
-#productos .articulo
-{
-
+@media (max-width: 600px) {
+	aside
+	{
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		margin: 5px;
+	}
+	#logo{
+		margin: -145px 32px 50px 0px;
+	}
 }
