@@ -74,7 +74,6 @@ section
 }
 aside
 {
-	text-align: center;
 	padding: 5px;
 	height: 700px;
 	margin: 0 0px 0 0;
@@ -82,10 +81,10 @@ aside
 	float: left;
 	background: white;
 }
-aside nav p
+aside nav p a 
 {
 	margin: 5px 0px 5px 15px;
-	padding: 5px 0px 30px 15px;
+	padding: 5px 0px 10px 15px;
 	font-size: 1.2em;
 }
 footer
@@ -162,4 +161,23 @@ footer .barra a:hover
 {
 	color:white;
 	text-align: center;
+}
+#productos
+{
+	text-align: center;
+	background: white;
+	margin: 5px;
+	padding: 5px;
+}
+#productos .articulo
+{
+	margin: 5px;
+	display: inline-block;
+	text-align: center;
+	background: grey;
+	width: 150px;
+}
+#productos .articulo
+{
+
 }

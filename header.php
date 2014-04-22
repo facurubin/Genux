@@ -17,8 +17,11 @@ echo '<!DOCTYPE html>
 	  	<div id="logo" class="icono-logo"></div>
 	  	<aside>
 		  	<nav>
-		  			<p><a href="index.php">Incio</a></p>
-		  			
+		  		<p><a href="index.php">Incio</a></p>
+		  		<p><a href="index.php">Memorias Ram</a></p>
+		  		<p><a href="index.php">Disco Rigido</a></p>
+		  		<p><a href="index.php">Placa Madre</a></p>
+		  		<p><a href="index.php">Fuentes</a></p>
 		  	</nav>
 		</aside>  	
 	  	<section>';

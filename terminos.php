@@ -8,7 +8,7 @@
 				<p>Los reclamos por rotura de la mercancía deberán efectuarse a la compañía de transporte que haya realizado el viaje y deberán realizarse en el mismo momento de recepción de la misma o dentro de las 24 horas siguientes.</p> 
 				<p>Las marcas y logotipos exhibidos en este sitio son propiedad de sus respectivos dueños. </p>
 				<p>Los productos publicados no necesariamente están disponibles para entrega inmediata. Le sugerimos contactarse previamente para corroborar la disponibilidad de los mismos. </p>
-				<p>Los datos enviados a Pixel Informática y transacciones serán tratadas con total confidencialidad y con el único fin de satisfacer y personalizar el trato con el cliente. Los mismos no se brindarán a terceros.</p>
+				<p>Los datos enviados a Genux Informática y transacciones serán tratadas con total confidencialidad y con el único fin de satisfacer y personalizar el trato con el cliente. Los mismos no se brindarán a terceros.</p>
 <h2 class="titulo">Garantía</h2>
 <p>Los equipos se configuran con clave en el BIOS por seguridad y garantía. Es absolutamente necesario conservar las cajas para validar la garantía. </p>
 <ul>            
