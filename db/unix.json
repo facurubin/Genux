@@ -1,0 +1,102 @@
+/**
+ Export to JSON plugin for PHPMyAdmin
+ @version 0.1
+ */
+
+// Database 'unix'
+// unix.productos
+
+[{"id": 1,"nombre": "Bateria Camara Nicon NH-870","precio": 200,"oferta": 1,"img": "bateria.jpg","categoria": "Baterias","descripcion": "Tipo
+Cámara Digital Compacta
+Píxeles reales
+16 millones
+Sensor de Imagen
+CMOS
+Tamaño del sensor
+1/2.3 in.
+Píxeles totales
+16.79 millones (aprox.)
+Lente
+Lente de cristal NIKKOR ED con zoom óptico de 30x
+Distancia Focal del Lente
+4.0-120.0 mm (ángulo de visión equivalente al del lente de 22.5-675 mm en formato de 35 mm [135])
+Número f/ del lente
+f/3-5.8
+Construcción del Lente
+12 elementos en 9 grupos (2 ED elementos de lente)
+Zoom del Lente
+30x
+Zoom Digital
+Hasta 4x (ángulo equivalente a aprox. 2,700mm del lente en un formato de 35mm)
+Reducción de la Vibración (VR)
+Desplazamiento del lente y VR Electrónica (fotografías) 
+VR por desplazamiento del lente (videos)
+Reducción de Desenfoque de Movimiento
+Detección de Movimiento (imágenes fijas)
+Enfoque automático (AF)
+AF con detección de contraste
+Selección de área de enfoque del enfoque automático (AF)
+Centro 
+Prioridad en el rostro"}, {"id": 2,"nombre": "Pendrive 16gb Kingstong","precio": 80,"oferta": 1,"img": "kingston.jpg","categoria": "Pendrives","descripcion": "Tipo
+Cámara Digital Compacta
+Píxeles reales
+16 millones
+Sensor de Imagen
+CMOS
+Tamaño del sensor
+1/2.3 in.
+Píxeles totales
+16.79 millones (aprox.)
+Lente
+Lente de cristal NIKKOR ED con zoom óptico de 30x
+Distancia Focal del Lente
+4.0-120.0 mm (ángulo de visión equivalente al del lente de 22.5-675 mm en formato de 35 mm [135])
+Número f/ del lente
+f/3-5.8
+Construcción del Lente
+12 elementos en 9 grupos (2 ED elementos de lente)
+Zoom del Lente
+30x
+Zoom Digital
+Hasta 4x (ángulo equivalente a aprox. 2,700mm del lente en un formato de 35mm)
+Reducción de la Vibración (VR)
+Desplazamiento del lente y VR Electrónica (fotografías) 
+VR por desplazamiento del lente (videos)
+Reducción de Desenfoque de Movimiento
+Detección de Movimiento (imágenes fijas)
+Enfoque automático (AF)
+AF con detección de contraste
+Selección de área de enfoque del enfoque automático (AF)
+Centro 
+Prioridad en el rostro"}, {"id": 3,"nombre": "Bateria Camara Nicon NH-870","precio": 200,"oferta": 1,"img": "bateria.jpg","categoria": "Baterias","descripcion": "Tipo
+Cámara Digital Compacta
+Píxeles reales
+16 millones
+Sensor de Imagen
+CMOS
+Tamaño del sensor
+1/2.3 in.
+Píxeles totales
+16.79 millones (aprox.)
+Lente
+Lente de cristal NIKKOR ED con zoom óptico de 30x
+Distancia Focal del Lente
+4.0-120.0 mm (ángulo de visión equivalente al del lente de 22.5-675 mm en formato de 35 mm [135])
+Número f/ del lente
+f/3-5.8
+Construcción del Lente
+12 elementos en 9 grupos (2 ED elementos de lente)
+Zoom del Lente
+30x
+Zoom Digital
+Hasta 4x (ángulo equivalente a aprox. 2,700mm del lente en un formato de 35mm)
+Reducción de la Vibración (VR)
+Desplazamiento del lente y VR Electrónica (fotografías) 
+VR por desplazamiento del lente (videos)
+Reducción de Desenfoque de Movimiento
+Detección de Movimiento (imágenes fijas)
+Enfoque automático (AF)
+AF con detección de contraste
+Selección de área de enfoque del enfoque automático (AF)
+Centro 
+Prioridad en el rostro"}]
