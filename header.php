@@ -17,12 +17,21 @@ echo '<!DOCTYPE html>
 	  	<div id="logo" class="icono-logo"></div>
 	  	<aside>
 		  	<nav>
-		  		<p><a href="index.php">Incio</a></p>
-		  		<p><a href="index.php">Memorias Ram</a></p>
-		  		<p><a href="index.php">Disco Rigido</a></p>
-		  		<p><a href="index.php">Placa Madre</a></p>
-		  		<p><a href="index.php">Fuentes</a></p>
-		  	</nav>
+		  	<p><a href="index.php">Incio</a></p>';
+		  	include 'db.php';
+			$db = new Db('unix');
+    		$resultado = $db->sql('SELECT `categoria` FROM  `productos`');
+            $num = $db->cantidad($resultado);
+            
+            if ($num> 0)
+        	{
+        		for ($i=0; $i<$num; $i++)
+        		{
+        			$row = mysql_fetch_array ($resultado);
+        			echo '<p><a href="categoria.php?c='.$row['categoria'].'">'.$row['categoria'].'</a></p>';
+        		}
+        	}
+		echo '</nav>
 		</aside>  	
 	  	<section>';
  ?>
