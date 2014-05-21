@@ -2,14 +2,14 @@
 include 'header.php';
 	echo '<article id="productos">
 	<h2 class="titulo">Categoria </h2>';
-			if(!is_int($_GET['c']))
+			if(is_int($_GET['c']))
 			{
 			    header('Location: index.php'); 
                 exit();
 			}
 			else
 			{
-    		    $resultado = $db->sql("SELECT * FROM  `productos` WHERE  `categoria` LIKE '".$_GET['c']."'");
+    		    $resultado = $db->sql("SELECT * FROM  `productos` WHERE  `id_cat` LIKE '".$_GET['c']."'");
                 $num = $db->cantidad($resultado);
                 if ($num> 0)
             	{

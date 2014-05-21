@@ -17,6 +17,15 @@ echo '<!DOCTYPE html>
 	  	<div id="logo" class="icono-logo"></div>
 	  	<aside>
 		  	<nav>
+    	    <form action="login.php" method="post" id="login">	
+        		<label>Nombre de usuario:</label>
+        		<p><input type="text" name="usuario" placeholder="Usuario"></p>
+        		<label>Contraseña:</label>
+        		<p><input type="password" name="constraseña" placeholder="Contraseña"></p>
+        		<input type="submit" value="Ingresar">
+		        <input type="submit" value="Registrarme">
+	        </form>
+		  	<div id="categorias">
 		  	<p><a href="index.php">Incio</a></p>';
 		  	include 'db.php';
 			$db = new Db('unix');
@@ -28,10 +37,10 @@ echo '<!DOCTYPE html>
         		for ($i=0; $i<$num; $i++)
         		{
         			$row = mysql_fetch_array ($resultado);
-        			echo '<p><a href="categoria.php?c='.$row['id_cat'].'">'.$row['nombre'].'</a></p>';
+        			echo '<p><a href="categoria.php?c='.$row['id_cat'].'">'.$row['cat_nom'].'</a></p>';
         		}
         	}
-		echo '</nav>
+		echo '</div></nav>
 		</aside>  	
 	  	<section>';
  ?>
