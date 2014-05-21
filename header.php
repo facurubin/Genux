@@ -20,7 +20,7 @@ echo '<!DOCTYPE html>
 		  	<p><a href="index.php">Incio</a></p>';
 		  	include 'db.php';
 			$db = new Db('unix');
-    		$resultado = $db->sql('SELECT `categoria` FROM  `productos`');
+    		$resultado = $db->sql('SELECT * FROM  `categorias`');
             $num = $db->cantidad($resultado);
             
             if ($num> 0)
@@ -28,7 +28,7 @@ echo '<!DOCTYPE html>
         		for ($i=0; $i<$num; $i++)
         		{
         			$row = mysql_fetch_array ($resultado);
-        			echo '<p><a href="categoria.php?c='.$row['categoria'].'">'.$row['categoria'].'</a></p>';
+        			echo '<p><a href="categoria.php?c='.$row['id_cat'].'">'.$row['nombre'].'</a></p>';
         		}
         	}
 		echo '</nav>

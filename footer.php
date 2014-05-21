@@ -3,10 +3,10 @@
 		<footer>
 	  		<div class="barra">
 	  			<p><a href="quienes_somos.php" class="icono-users">Quienes Somos</a></p>
-		  		<p><a href="construccion.php" class="icono-basket">Catálogo de productos</a></p>
+		  		<p><a href="catalogo.php" class="icono-basket">Catálogo de productos</a></p>
 		  		<p> <a href="comercializacion.php" class="icono-chart-bar"> Comercialización</a></p>
 		  		<p><a href="contacto.php" class="icono-at">Información de contacto</a></p>
-		  		<p><a href="construccion.php" class="icono-gmail"> Consultas </a></p>
+		  		<p><a href="contacto.php" class="icono-gmail"> Consultas </a></p>
 		  		<p><a href="terminos.php" class="icono-doc-text">Términos y usos</a></p>
 	  		</div>
 	  			<p>
