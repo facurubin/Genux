@@ -38,5 +38,6 @@ class Admin
     }
     
 }
-$usuario = new Admin('roost','1234');
+//Ejemplo
+//$usuario = new Admin('root','1234');
 ?>
