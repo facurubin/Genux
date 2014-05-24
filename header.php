@@ -37,7 +37,7 @@ echo '<!DOCTYPE html>
         	{
         		for ($i=0; $i<$num; $i++)
         		{
-        			$row = mysql_fetch_array ($resultado);
+        			$row = mysql_fetch_array($resultado);
         			echo '<p><a href="categoria.php?c='.$row['id_cat'].'">'.$row['cat_nom'].'</a></p>';
         		}
         	}
