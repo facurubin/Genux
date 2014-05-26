@@ -28,6 +28,7 @@ echo '<!DOCTYPE html>
 	        </form>
 		  	<div id="categorias">
 		  	<p><a href="index.php">Incio</a></p>';
+		  	session_start(); 
 		  	include 'db.php';
 			$db = new Db('unix');
     		$resultado = $db->sql('SELECT * FROM  `categorias`');

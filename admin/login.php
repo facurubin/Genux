@@ -18,7 +18,14 @@
     <body>
 
     <div class="container">
-
+        <?php
+            session_start(); 
+            echo 'session_id(): ' . session_id(); 
+            echo "<br />\n"; 
+            echo 'session_name(): ' . session_name(); 
+            echo "<br />\n"; 
+            print_r(session_get_cookie_params()); 
+        ?>
       <form class="form-signin" role="form">
         <h2 class="form-signin-heading">Inicio Sesion</h2>
         <input type="email" class="form-control" placeholder="Usuario" required autofocus>
