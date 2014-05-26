@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <?php
+    if ($_SESSION["autentificado"] != "SI") { 
+   	//si no existe, envio a la página de autentificacion 
+   	header("Location: login.php"); 
+   	//ademas salgo de este script 
+   	exit(); 
+    }
+    ?>
     <title>Panel de Administración</title>
 
     <!-- Bootstrap core CSS -->
