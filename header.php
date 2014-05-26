@@ -17,18 +17,22 @@ echo '<!DOCTYPE html>
 	  	</header>
 	  	<div id="logo" class="icono-logo"></div>
 	  	<aside>
-		  	<nav>
-    	    <form action="login.php" method="post" id="login">	
-        		<label>Nombre de usuario:</label>
-        		<p><input type="text" name="usuario" placeholder="Usuario"></p>
-        		<label>Contraseña:</label>
-        		<p><input type="password" name="constraseña" placeholder="Contraseña"></p>
-        		<input type="submit" value="Ingresar">
-		        <input type="submit" value="Registrarme">
-	        </form>
-		  	<div id="categorias">
-		  	<p><a href="index.php">Incio</a></p>';
-		  	session_start(); 
+		  	<nav>';
+            if (!isset($_SESSION['auth'])){
+        	    echo '<form action="login.php" method="post" id="login">	
+            		<label>Nombre de usuario:</label>
+            		<p><input type="text" name="usuario" placeholder="Usuario"></p>
+            		<label>Contraseña:</label>
+            		<p><input type="password" name="constraseña" placeholder="Contraseña"></p>
+            		<input type="submit" value="Ingresar">';
+    		    echo "<p><a href='registrarse.php'>¿No tienes una cuenta?</a></p>";
+	            echo '</form>';
+            }elseif ($_SESSION['auth']== true){
+                echo 'Bienvenido "'.$_SESSION['usuario_nombre'];
+                echo "<a href='pagina3.php'>Cerrar Sesion</a>";
+            }
+            echo '<div id="categorias"><p><a href="index.php">Incio</a></p>';
+		  	 
 		  	include 'db.php';
 			$db = new Db('unix');
     		$resultado = $db->sql('SELECT * FROM  `categorias`');
