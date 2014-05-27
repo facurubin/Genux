@@ -1,5 +1,8 @@
 <?php 
-session_start();  
+if (!isset($_SESSION))
+  {
+    session_start();
+  } 
 echo '<!DOCTYPE html>
 <html lang="es">
   <head>
@@ -19,17 +22,19 @@ echo '<!DOCTYPE html>
 	  	<aside>
 		  	<nav>';
             if (!isset($_SESSION['auth'])){
-        	    echo '<form action="login.php" method="post" id="login">	
+        	    echo '<form action="auth.php" method="post" id="login">	
             		<label>Nombre de usuario:</label>
             		<p><input type="text" name="usuario" placeholder="Usuario"></p>
             		<label>Contraseña:</label>
-            		<p><input type="password" name="constraseña" placeholder="Contraseña"></p>
+            		<p><input type="password" name="contrasena" placeholder="Contraseña"></p>
             		<input type="submit" value="Ingresar">';
     		    echo "<p><a href='registrarse.php'>¿No tienes una cuenta?</a></p>";
 	            echo '</form>';
             }elseif ($_SESSION['auth']== true){
-                echo 'Bienvenido "'.$_SESSION['usuario_nombre'];
-                echo "<a href='pagina3.php'>Cerrar Sesion</a>";
+                echo '<div id="login">';
+                echo '<p>Bienvenido '.$_SESSION['nombre'].' '.$_SESSION['apellido'].'</p>';
+                echo "<a href='auth.php?e=des'>Cerrar Sesion</a>";
+                echo '</div>';
             }
             echo '<div id="categorias"><p><a href="index.php">Incio</a></p>';
 		  	 
