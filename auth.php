@@ -8,7 +8,6 @@ class Auth
 {
     private $nombre;
     private $contraseña;
-    private $admin;
     private $db;
     
     function __construct($usuario,$contraseña,$tipo)
@@ -16,17 +15,11 @@ class Auth
         $this->db = new Db('unix');
         $this->nombre=$usuario;
         $this->contraseña=$contraseña;
-        $this->admin=$tipo;
     }
     function comprobar()
     //Funcion para verificar usuario y contraseña
     {
-        $tipo='usuarios';
-        if($this->admin==true)
-        {
-            $tipo='admin';
-        }
-        	$resultado = $this->db->sql("SELECT * FROM  `".$tipo."` WHERE  `usuario` LIKE '".$this->nombre."'");
+        	$resultado = $this->db->sql("SELECT * FROM  `usuarios` WHERE  `usuario` LIKE '".$this->nombre."'");
             $num = $this->db->cantidad($resultado);
             if ($num==1)
             {
@@ -67,6 +60,7 @@ elseif(!isset($_POST['usuario']) || !isset($_POST['contrasena']))
 //Si no hay datos post de usuario y contraseña
 {
     header("Location: index.php"); 
+    exit(); 
 }
 else{
     $usuario = new Auth($_POST['usuario'],$_POST['contrasena'],false);
@@ -80,6 +74,7 @@ else{
     }else
     {
         header("Location: index.php?a=error");
+        exit(); 
     }
 }
 ?>

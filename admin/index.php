@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <?php
-    if ($_SESSION["autentificado"] != "SI") { 
+    session_start(); 
+    if (!$_SESSION['admin']=='true') { 
    	//si no existe, envio a la página de autentificacion 
    	header("Location: login.php"); 
    	//ademas salgo de este script 

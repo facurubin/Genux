@@ -20,12 +20,11 @@
     <div class="container">
         <?php
             session_start(); 
-            
         ?>
-      <form class="form-signin" role="form">
+      <form class="form-signin" role="form" action="auth.php" method="post">
         <h2 class="form-signin-heading">Inicio Sesion</h2>
-        <input type="email" class="form-control" placeholder="Usuario" required autofocus>
-        <input type="password" class="form-control" placeholder="Contraseña" required>
+        <input type="text" class="form-control" placeholder="Usuario" name="usuario" required autofocus>
+        <input type="password" class="form-control" name="contrasena" placeholder="Contraseña" required>
         <label class="checkbox">
           <input type="checkbox" value="Recordarme"> Recordarme
         </label>
