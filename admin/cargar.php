@@ -5,7 +5,7 @@ include_once 'header.php';
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li><a href="index.php">Compras</a></li>
+            <li><a href="index.php">Ventas</a></li>
             <li><a href="articulos.php">Articulos</a></li>
             <li class="active"><a href="cargar.php">Cargar</a></li>
           </ul>
@@ -26,11 +26,18 @@ include_once 'header.php';
          <div class="form-group">
             <label for="exampleInputFile">Categoria</label>
             <select multiple class="form-control">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <?php
+              $resultado = $db->sql("SELECT `cat_nom` FROM  `categorias`");
+                $num = $db->cantidad($resultado);
+                if ($num> 0)
+            	{
+            		for ($i=0; $i<$num; $i++)
+            		{
+            			$row = mysql_fetch_array ($resultado);
+    						echo '<option>'.$row['cat_nom'].'</option>';
+            		}
+            	}
+              ?>
             </select>
           </div>
           <div class="form-group">

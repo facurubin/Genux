@@ -5,7 +5,7 @@ include_once 'header.php';
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="index.php">Compras</a></li>
+            <li class="active"><a href="index.php">Ventas</a></li>
             <li><a href="articulos.php">Articulos</a></li>
             <li><a href="cargar.php">Cargar</a></li>
           </ul>
@@ -18,96 +18,31 @@ include_once 'header.php';
                 <tr>
                   <th>Nombre</th>
                   <th>Precio</th>
-                  <th>Ventas</th>
-                  <th>Codigo</th>
-                  <th>Categoria</th>
+                  <th>Fecha</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
+               <?php
+                /*echo "<tr>\n
+                  <td>1,001</td>\n
+                  <td>Lorem</td>\n
+                  <td>ipsum</td>\n
+                </tr>\n";*/
+                $resultado = $db->sql("SELECT * FROM  `ventas`");
+                $num = $db->cantidad($resultado);
+                if ($num> 0)
+            	{
+            		for ($i=0; $i<$num; $i++)
+            		{
+            			$row = mysql_fetch_array ($resultado);
+        				 echo "<tr>\n
+                      <td>".$row['id_usu']."</td>\n
+                      <td>$".$row['importe']."</td>\n
+                      <td>".$row['fecha']."</td>\n
+                    </tr>\n";
+            		}
+            	}
+               ?> 
               </tbody>
             </table>
           </div>
