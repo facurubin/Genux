@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <?php
+    include_once '../db.php';
+    $db = new Db('unix');
     session_start(); 
     if (!$_SESSION['admin']=='true') { 
    	//si no existe, envio a la página de autentificacion 
@@ -46,7 +48,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="#">Cerrar Sesion</a></li>
+            <li><a href="auth.php?e=des">Cerrar Sesion</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Buscar...">

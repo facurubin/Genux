@@ -1,6 +1,11 @@
 <?php
 include_once '../db.php';
 session_start();
+if($_GET['e']=='des' && $_SESSION['admin']=='true')
+{
+    session_destroy();
+    header("Location: index.php"); 
+} 
 class Auth
 {
     private $nombre;
