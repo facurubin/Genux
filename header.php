@@ -40,7 +40,7 @@ echo '<!DOCTYPE html>
 		  	 
 		  	include 'db.php';
 			$db = new Db('unix');
-    		$resultado = $db->sql('SELECT * FROM  `categorias`');
+    		$resultado = $db->sql('SELECT * FROM  `categorias` WHERE  `cantidad` >=1 LIMIT 0 , 30');
             $num = $db->cantidad($resultado);
             
             if ($num> 0)

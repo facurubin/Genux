@@ -177,6 +177,11 @@ footer .barra a:hover
 	background: grey;
 	width: 150px;
 }
+#productos .articulo a
+{
+    background: white;
+    padding: 1px;
+}
 #login
 {
     text-align:center;

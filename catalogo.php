@@ -18,6 +18,7 @@
 						<div class="precio">
 							$'.$row['precio'].'
 						</div>
+						<a href="carrito.php?id='.$row['id_pro'].'" class="icono-basket">Comprar</a>
 						</div>';
 		}
 	}

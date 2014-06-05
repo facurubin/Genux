@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 31-05-2014 a las 13:17:26
+-- Tiempo de generación: 31-05-2014 a las 14:45:59
 -- Versión del servidor: 5.5.32-0ubuntu0.13.04.1
 -- Versión de PHP: 5.4.9-4ubuntu2.3
 
@@ -132,9 +132,17 @@ CREATE TABLE IF NOT EXISTS `ventas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_usu` int(11) NOT NULL,
   `importe` float NOT NULL,
-  `fecha` date NOT NULL,
+  `fecha` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `ventas`
+--
+
+INSERT INTO `ventas` (`id`, `id_usu`, `importe`, `fecha`) VALUES
+(1, 1, 200, '2014-05-14 00:00:00'),
+(2, 1, 350, '2014-05-12 12:23:06');
 
 --
 -- Restricciones para tablas volcadas

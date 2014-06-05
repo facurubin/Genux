@@ -63,8 +63,14 @@ class Auth
 if(!isset($_POST['usuario']) || !isset($_POST['contrasena']))
 //Si no hay datos post de usuario y contraseña
 {
-    header("Location: login.php?error=vacio");
-    exit(); 
+    if(!isset($_GET['id']) and $_SESSION['admin']=='true')
+    {
+        header("Location: login.php?error=nuevorpod");
+        exit();
+    }else{
+        header("Location: login.php?error=vacio");
+        exit(); 
+    } 
 }
 else{
     $usuario = new Auth($_POST['usuario'],$_POST['contrasena'],false);

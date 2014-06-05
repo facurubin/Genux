@@ -1,16 +1,15 @@
 <?php 
 	include_once 'header.php';
 	include_once 'db.php';
-    $resultado = $db->sql('SELECT * FROM  `productos` WHERE  `oferta` = 1 LIMIT 0 , 5');
+	if(isset($_GET['id'])){
+    $resultado = $db->sql('SELECT * FROM  `productos` WHERE  `id_pro` = '.$_GET['id']);
 	$num = $db->cantidad($resultado);
-	echo '<article id="productos">
-	<h2 class="titulo">Ofertas </h2>';
 	if ($num> 0)
 	{
-		for ($i=0; $i<$num; $i++)
-		{
-			$row = mysql_fetch_array ($resultado);
-						echo '<div class="articulo">
+	$row = mysql_fetch_array ($resultado);
+	echo '<article id="contenido">
+	<h2 class="titulo">'.$row['nombre'].'</h2>';
+				echo '<div class="articulo">
 						<div class="nombre">
 							'.$row['nombre'].'
 						</div>
@@ -18,9 +17,10 @@
 						<div class="precio">
 							$'.$row['precio'].'
 						</div>
-						<a href="carrito.php?id='.$row['id_pro'].'" class="icono-basket">Comprar</a>
+					<a href="carrito.php?id='.$row['id_pro'].'" class="icono-basket">Comprar</a>
 						</div>';
-		}
+		
+	}
 	}
 ?>
 </articule>    
