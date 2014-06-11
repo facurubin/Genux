@@ -20,7 +20,20 @@ echo '<!DOCTYPE html>
 	  	</header>
 	  	<div id="logo" class="icono-logo"></div>
 	  	<aside>
-		  	<nav>';
+		  	<nav>
+		  	<div id="compra">
+    		  	';
+    		  	 if(isset($_SESSION['carrito'])){
+    		  	    echo '<h2>'.count($_SESSION['carrito']).'</h2>';
+    		  	 }else{
+    		  	    echo '<h3>0</h3>';
+    		  	 }
+    		  	 echo '<p>Articulos</p>';
+    		  	 
+    		  	echo'<a href="carrito.php?id=" class="icono-basket"></a></br>
+    		  	<a href="carrito.php?id=">Comprar</a>
+		  	</div>';
+		  	
             if (!isset($_SESSION['auth'])){
         	    echo '<form action="auth.php" method="post" id="login">	
             		<label>Nombre de usuario:</label>

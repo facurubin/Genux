@@ -18,7 +18,7 @@
 						<div class="precio">
 							$'.$row['precio'].'
 						</div>
-						<a href="carrito.php?id='.$row['id_pro'].'" class="icono-basket">Comprar</a>
+						<a href="carrito.php?a=agregar&id='.$row['id_pro'].'" class="icono-basket">Comprar</a>
 						</div>';
 		}
 	}
