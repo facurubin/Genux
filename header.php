@@ -30,8 +30,7 @@ echo '<!DOCTYPE html>
     		  	 }
     		  	 echo '<p>Articulos</p>';
     		  	 
-    		  	echo'<a href="carrito.php?id=" class="icono-basket"></a></br>
-    		  	<a href="carrito.php?id=">Comprar</a>
+    		  	echo'<a href="carrito.php?a=comprar" class="icono-basket">Comprar</a>
 		  	</div>';
 		  	
             if (!isset($_SESSION['auth'])){
